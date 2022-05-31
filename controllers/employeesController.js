@@ -7,11 +7,6 @@ const getAllEmployees = (req, res) => {
     res.json(data.employees)
 }
 const createNewEmployee = (req, res) => {
-    // res.json({
-    //     "firstname": req.body.firstname,
-    //     "lastname": req.body.lastname
-    // });
-
     const newEmployee = {
         id: data.employees[data.employees.length - 1].id + 1 || 1,
         firstname: req.body.firstname,
